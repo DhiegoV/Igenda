@@ -1,0 +1,8 @@
+@startuml
+
+usuario - (cadastrar atividade)
+usuario -- (visualizar atividades)
+usuario -- (concluir atividade)
+usuario -left- (excluir atividade)
+
+@enduml
