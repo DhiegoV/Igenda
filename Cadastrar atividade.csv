@@ -1,0 +1,12 @@
+Caso de Uso:,Cadastrar atividade
+Descrição:,O usuário pode cadastrar uma atividade customizando-a previamente conforme a sua vontade
+Autores,Usuário
+Pré-condição,A atividade precisa ter uma tag criada pelo sistema ou criada pelo próprio usuário
+Fluxo primário ,"1. O sistema mostra ao usuário as opções de cadastramento da atividade
+2. O usuário escolhe a tag da atividade
+3. O usuário fornece uma discrição sobre a atividade
+4. O sistema atualiza a agenda com a nova atividade"
+Pós-condição,A Atividade deve ser salva e exibida ao usuário sendo possível a editar 
+Fluxo secundário,"2-3 Criar nova tag
+     1. O usuário solicita criar uma noa tag ainda        nas opções de cadastramento fornecido pelo      sistema
+     2. O sistema salva a nova tag e a coloca              como tag da atividade que está sendo criada      pelo usuário "
