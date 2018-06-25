@@ -1,8 +1,0 @@
-Caso de Uso:, Visualizar atividade
-Descrição:,O usuário pode visualizar todas as atividades que ele criou e que estão dispostas no sistema
-Autores,Usuário
-Pré-condição,A atividade que será vista pelo usuário precisa ter sido cridada pelo mesmo e salva pelo sistema 
-Fluxo primário ,"1. O sistema mostra ao usuário todos os títulos de atividades que ele criou
-2. O usuário escolhe uma das atividades
-3. O sistema fornece ao usuário a descrição criada por ele e que havia sido salva"
-Pós-condição,A Atividade deve continuar salva no sistema
