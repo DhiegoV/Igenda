@@ -1,0 +1,10 @@
+Nome	Consultar atividades.
+Descrição	Depois de tê-las definido no desejo de apenas consultar as atividades existentes, o usuário pode selecionar a opção de ver suas atividades do menu inicial, que supre esse desejo.
+Ator	Aluno.
+Pré-condição	O usuário deve estar no menu inicial.
+Fluxo primário	"1. O usuário seleciona a opção de visualizar as atividades;
+2. O sistema mostra na tela as atividades existentes;
+3. O usuário volta para o menu inicial."
+Fluxo alternativo	"1-2:
+1. Caso o sistema ainda não tenha nenhuma atividade registrada, uma mensagem deve ser exibida informando isso;
+2. O usuário volta para o menu inicial."

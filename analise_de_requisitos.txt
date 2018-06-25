@@ -63,12 +63,12 @@ O aluno quer registrar suas atividades, podendo consultá-las, editá-las e num 
 posterior.
 
 	2.2. Requisitos Funcionais do Sistema
-obs.: arquivos externos ainda inexistentes.
+obs.: alguns arquivos externos ainda são inexistentes.
 - Criar uma nova atividade (vide caso de uso criar_atividade.txt);
 - Editar uma atividade existente (vide editar_atividade.txt);
 - Apagar uma atividade existente (vide apagar_atividade.txt);
 - Definir conclusão de atividade (vide concluir_atividade.txt);
-- Visualizar suas atividades (vide consultar_atividade.txt).
+- Visualizar suas atividades (vide consultar_atividades.txt).
 
 	2.3. Requisitos Não Funcionais do Sistema
 - Toda informação inserida deve ser editável;
