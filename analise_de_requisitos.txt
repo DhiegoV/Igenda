@@ -65,7 +65,7 @@ posterior.
 	2.2. Requisitos Funcionais do Sistema
 obs.: alguns arquivos externos ainda são inexistentes.
 - Criar uma nova atividade (vide caso de uso criar_atividade.txt);
-- Editar uma atividade existente (vide editar_atividade.txt);
+- Editar uma atividade existente (vide editar_atividade.md);
 - Apagar uma atividade existente (vide apagar_atividade.txt);
 - Definir conclusão de atividade (vide concluir_atividade.txt);
 - Tag atividades (vide tag_atividade.md);
