@@ -69,6 +69,7 @@ obs.: alguns arquivos externos ainda são inexistentes.
 - Apagar uma atividade existente (vide apagar_atividade.txt);
 - Definir conclusão de atividade (vide concluir_atividade.txt);
 - Tag atividades (vide tag_atividade.md);
+- Marcar estado das atividades (vide marcar_estado.md);
 - Visualizar suas atividades (vide consultar_atividades.txt).
 
 	2.3. Requisitos Não Funcionais do Sistema
