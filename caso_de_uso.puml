@@ -1,8 +1,11 @@
 @startuml
 
-usuario - (cadastrar atividade)
-usuario -- (visualizar atividades)
-usuario -- (concluir atividade)
-usuario -left- (excluir atividade)
+usuario -up- (criar atividade)
+usuario -up- (listar atividades)
+usuario -left- (editar atividade)
+usuario -right- (apagar atividade)
+usuario -- (visualizar atividade)
+usuario -- (tag atividades)
+usuario -- (marcar estado de atividade)
 
 @enduml
