@@ -64,13 +64,13 @@ posterior.
 
 	2.2. Requisitos Funcionais do Sistema
 obs.: alguns arquivos externos ainda são inexistentes.
-- Criar uma nova atividade (vide caso de uso criar_atividade.txt);
+- Criar uma nova atividade (vide caso de uso criar_atividade.md);
 - Editar uma atividade existente (vide editar_atividade.md);
-- Apagar uma atividade existente (vide apagar_atividade.txt);
-- Definir conclusão de atividade (vide concluir_atividade.txt);
+- Apagar uma atividade existente (vide apagar_atividade.md);
+- Definir conclusão de atividade (vide concluir_atividade.md);
 - Tag atividades (vide tag_atividade.md);
 - Marcar estado das atividades (vide marcar_estado.md);
-- Visualizar suas atividades (vide consultar_atividades.txt).
+- Visualizar suas atividades (vide consultar_atividades.md).
 
 	2.3. Requisitos Não Funcionais do Sistema
 - Toda informação inserida deve ser editável;
