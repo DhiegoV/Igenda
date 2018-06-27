@@ -1,13 +1,10 @@
 Nome,Apagar atividade.
 Ator,Aluno.
-Pré-condição,O usuário deve estar no menu inicial.
-Fluxo primário,"1. O usuário seleciona a opção de apagar atividade;
-2. O sistema mostra as atividades existentes do usuário na tela, juntamente com a opção de voltar ao menu anterior;
-3. O usuário seleciona a atividade que quer apagar;
-4. O sistema apaga a atividade;
-5. O sistema mostra novamente a tela do passo 2, agora sem as atividades selecionadas no passo 3;
-6. O usuário seleciona a opção de voltar e volta para o menu inicial."
+Pré-condição,A atividade deve existir.
+Fluxo primário,"1. O usuário seleciona o comando de apagar passando como argumento o número da atividade que quer apagar;
+2. O sistema apaga a atividade;"
 Pós-condições,A atividade ou atividades devem ter sido apagadas do registro de atividades.
-Fluxos alternativos,"entre 5 e 6:
-1. O usuário seleciona outra atividade para apagar;
-2. O fluxo primário é retomado a partir do passo 4."
+Fluxos alternativos,"Entre 1 e 2:
+1. Se a atividade referenciada não existir;
+2. O sistema informa ao usuário que a atividade não existe."
+,2
