@@ -16,21 +16,21 @@ Campina Grande, 2018
 
 === CONTROLE DE VERSÕES ===
 
----------------------------------------------------------------------
-Versão   |Alterações Realizadas      |Responsável         |Data
----------|---------------------------|--------------------|----------
-1.0      |Início de projeto          |Ambos autores       |23/05/2018
----------------------------------------------------------------------
+--------------------------------------------------------------
+ Versão | Alterações Realizadas | Responsável    | Data
+--------|-----------------------|----------------|------------
+ 1.0    | Início de projeto     | Ambos autores  | 23/05/2018
+--------------------------------------------------------------
 
 
 === GLOSSÁRIO ===
 
----------------------------------------------------------------------------------
-Termo     |Descrição
-----------|----------------------------------------------------------------------
-Atividade |Evento com data marcada e descrição, genérica propositalmente para dar
-          |ao usuário a liberdade de definir o tipo.
----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ Termo     | Descrição
+-----------|--------------------------------------------------------------------
+ Atividade | Evento com data marcada e descrição, genérica propositalmente para
+           | dar ao usuário a liberdade de definir o tipo.
+--------------------------------------------------------------------------------
 
 
 ===  1. VISÃO GERAL DO PROJETO ===
@@ -40,38 +40,39 @@ Uma agenda eletrônica para os estudantes do IFPB.
 
 	1.2. Justificativa
 Em pleno século XXI, é necessário que os estudantes se utilizem dos meios da
-informática para se organizar e ter um melhor rendimento. Isso é tanto bom para o
-meio ambiente (por não gastar papel para agendas), quanto para o aluno, que tem
-necessidades um tanto bem definidas ao ponto de serem generalizadas em um programa.
+informática para se organizar e ter um melhor rendimento. Isso é tanto bom para
+o meio ambiente (por não gastar papel para agendas), quanto para o aluno, que
+tem necessidades um tanto bem definidas ao ponto de serem generalizadas em um
+programa.
 
 	1.3. Principais Funções do Sistema
-O sistema armazena eventos, chamados de atividades (vide glossário), que o usuário define.
-Com as atividades ele pode:
-- Criar uma nova;
-- Editar uma existente;
-- Apagar uma existente;
-- Marcar como concluída, se desejável;
-- Consultar atividades;
+O sistema armazena eventos, chamados de atividades (vide glossário), que o
+usuário define.  Com as atividades ele pode:
+
+- Gerenciar atividades (criar, listar, editar e remover);
+- Classificar atividades, com tags;
+- Modificar o estado das atividades (não iniciada, em andamento e concluída);
 
 	1.4. Tipos de Usuários
-Aluno: ele define suas atividades; tem acesso à todas funcionalidades do sistema.
+Aluno: ele define suas atividades; tem acesso a todas funcionalidades do sistema.
 
 === 2. ANÁLISE E ESPECIFICAÇÃO DO SISTEMA ===
 
 	2.1. Requisitos do Usuário
-O aluno quer registrar suas atividades, podendo consultá-las, editá-las e num momento
-posterior.
+O aluno requer que possa gerenciar atividades, classificando-as utilizando tags
+(projeto, pesquisa, prova, seminário, etc) e atualizando seu estado (não
+iniciada, em andamento e concluída). Mais detalhes podem ser encontrados no
+diagrama de casos de uso (caso_de_uso.png).
 
 	2.2. Requisitos Funcionais do Sistema
-obs.: alguns arquivos externos ainda são inexistentes.
-- Criar uma nova atividade (vide caso de uso criar_atividade.md);
-- Editar uma atividade existente (vide editar_atividade.md);
-- Apagar uma atividade existente (vide apagar_atividade.md);
-- Definir conclusão de atividade (vide concluir_atividade.md);
-- Tag atividades (vide tag_atividade.md);
-- Marcar estado das atividades (vide marcar_estado.md);
+- Criar atividade (vide caso de uso criar_atividade.md);
+- Listar atividades (vide listar_atividades.md)
+- Editar atividade (vide editar_atividade.md);
+- Apagar atividade (vide apagar_atividade.md);
+- Tag atividade (vide tag_atividade.md);
+- Marcar estado de atividade (vide marcar_estado.md);
 - Visualizar suas atividades (vide consultar_atividades.md).
 
 	2.3. Requisitos Não Funcionais do Sistema
 - Toda informação inserida deve ser editável;
-- Todas dados serão salvos localmente, num simples arquivo .csv.
+- Todas dados serão salvos localmente.

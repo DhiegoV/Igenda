@@ -1,5 +1,5 @@
 # Nome
-Marcar estado.
+Marcar estado de atividade.
 
 # Descrição
 O usuário pode marcar o estado de uma atividade. Isto é, se ela foi concluída
@@ -8,7 +8,7 @@ ou está em andamento. A toda atividade, quando criada, é atribuído o estado
 excluí-la também, caso o usuário opte por não excluir, ela será arquivada.
 
 # Ator
-Usuário.
+Aluno.
 
 # Pré-condições
 Deve existir pelo menos uma atividade já registrada no sistema.

@@ -6,7 +6,7 @@ O usuário pode criar uma atividade customizando-a previamente conforme a sua
 vontade.
 
 # Ator
-Usuário.
+Aluno.
 
 # Fluxo primário
 1. O usuário insere o texto da atividade (a primeira linha é o título e o

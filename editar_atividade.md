@@ -5,7 +5,7 @@ Editar atividade.
 Este caso de uso trata da edição do par título e descrição pelo usuário.
 
 # Ator
-Usuário.
+Aluno.
 
 # Pré-condições
 A atividade a ser editada deve existir no sistema.

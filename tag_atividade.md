@@ -9,7 +9,7 @@ próprias. Isto possibilita que Igenda seja usado para atividades de propósito
 geral, apesar do foco estudantil.
 
 # Ator
-Usuário.
+Aluno.
 
 # Pré-condições
 Alguma atividade deve existir para a qual serão aplicadas tags.
