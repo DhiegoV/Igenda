@@ -19,8 +19,16 @@ Campina Grande, 2018
 --------------------------------------------------------------
  Versão | Alterações Realizadas | Responsável    | Data
 --------|-----------------------|----------------|------------
- 1.0    | Início de projeto     | Ambos autores  | 23/05/2018
---------------------------------------------------------------
+ 0.1    | Início de projeto     | Ambos autores  | 23/05/2018
+ 0.2    | Adicionando alguns    | Gustavo        | 26/05/2018
+        | casos de uso          |                |
+		| estruturados (c.u.e's)|                |
+ 0.3    | Adicionando mais cue's| Dhiego         | 24/06/2018
+ 0.4    | Finalizada ideia geral| Ambos autores  | 27/06/2018
+        | do programa           |                |
+ 0.5    | Revisão de textos e   | Dhiego         | 27/06/2018
+        | atualizações          |                |
+ --------------------------------------------------------------
 
 
 === GLOSSÁRIO ===
