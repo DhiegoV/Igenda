@@ -1,0 +1,17 @@
+@startuml
+
+participant Usuario as usr
+participant Interface as in
+participant Fachada as fac
+
+usr -> in: criar_atividade()
+usr <-- in: Me diga a descrição
+usr --> in: <Descrição>
+usr <-- in: Me diga as tags
+usr --> in: <Tags>
+usr <-- in: Me diga a data para essa atividade
+usr --> in: <Data>
+in -> fac: criar_atividade(Atividade atividade)
+
+@enduml
+
