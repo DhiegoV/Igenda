@@ -1,0 +1,13 @@
+@startuml
+
+participant Usuario as usr
+participant Interface as in
+participant Fachada as fac
+
+usr -> in: listar_atividades()
+in -> fac: obter_atividades()
+in <- fac: list<Atividade>
+usr <-- in: lista de atividades na tela
+
+@enduml
+
