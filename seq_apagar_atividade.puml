@@ -1,0 +1,16 @@
+@startuml
+
+participant Usuario as usr
+participant Interface as in
+participant Fachada as fac
+
+usr -> in: apagar_atividade()
+in -> fac: obter_atividades()
+in <- fac: list<Atividade>
+usr <- in: <Lista numerada das atividades>
+usr <- in: Qual o número da atividade?
+usr -> in: <Número da atividade>
+in -> fac: apagar_atividade(Atividade atividade)
+
+@enduml
+
