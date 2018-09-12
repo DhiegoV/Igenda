@@ -1,0 +1,19 @@
+@startuml
+
+participant Usuario as usr
+participant Interface as in
+participant Fachada as fac
+
+usr -> in: marcar_estado_atividade()
+in -> fac: obter_atividades()
+in <- fac: list<Atividade>
+usr <- in: <Lista numerada de atividades>
+usr <- in: Qual o número da atividade?
+usr -> in: <Número>
+usr <- in: <Lista numerada de estados>
+usr <- in: Qual o número do estado para atribuir à atividade escolhida?
+usr -> in: <Número>
+in -> fac: marcar_estado_atividade(Atividade atividade, str estado)
+
+@enduml
+
