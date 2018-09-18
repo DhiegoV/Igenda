@@ -1,0 +1,35 @@
+@startuml
+
+class Atividade {
+    str nome
+    list<Tag> tags
+    str deadline
+    str disciplina
+}
+
+class Fachada {
+	list<Atividade> atividades
+	list<Tag> tags
+
+    void apagar_atividade(Atividade atividade)
+    void criar_atividade(Atividade atividade)
+    void marcar_estado_atividade(Atividade atividade, str estado)
+    list<Atividade> obter_atividades()
+}
+
+Fachada *- Atividade
+
+class Interface {
+    void listar_atividades()
+    void criar_atividade()
+    void apagar_atividade()
+    void marcar_estado_atividade()
+    void tag_atividade()
+    void visualizar_atividade()
+    void editar_atividade()
+}
+
+Interface -- Fachada : chama
+
+@enduml
+
