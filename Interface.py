@@ -8,7 +8,7 @@ class Interface:
 		self.fachada = Fachada()
 		self.ajuda = \
 			"l listar atividades\n" \
-			"c criar atividade\n"	\
+			"c criar atividade\n"   \
 			"x sair"
 
 	def iniciar(self):
