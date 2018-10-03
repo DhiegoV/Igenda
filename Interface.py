@@ -45,6 +45,8 @@ class Interface:
 
 		atividades = self.fachada.obter_atividades()
 
+		contador = 1
 		for atividade in atividades:
-			print(atividade)
+			print(str(contador) + ' ' + str(atividade))
+			contador += 1
 
