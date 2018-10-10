@@ -1,4 +1,3 @@
-
 from Atividade import Atividade
 from Fachada import Fachada
 
@@ -13,6 +12,7 @@ class Interface:
 			"x sair"
 
 	def iniciar(self):
+		"""Inicie o sistema."""
 
 		print("Insira h para ajuda")
 
@@ -20,6 +20,7 @@ class Interface:
 			self.prompt()
 
 	def prompt(self):
+		"""Solicite entrada do usuario."""
 
 		entrada = input('> ')
 
@@ -35,6 +36,7 @@ class Interface:
 			self.listar_atividades()
 
 	def apagar_atividade(self):
+		"""Permita o usuario escolher uma atividade para apagar."""
 
 		self.listar_atividades()
 
@@ -46,6 +48,7 @@ class Interface:
 		self.fachada.apagar_atividade(atividade_selecionada)
 
 	def criar_atividade(self):
+		"""Crie uma atividade solicitando ao usuario os dados necessarios."""
 
 		nome = input('nome: ')
 		deadline = input('deadline: ')
@@ -56,6 +59,7 @@ class Interface:
 		self.fachada.criar_atividade(atividade)
 
 	def listar_atividades(self):
+		"""Mostre ao usuario uma lista numerada de atividades."""
 
 		atividades = self.fachada.obter_atividades()
 
