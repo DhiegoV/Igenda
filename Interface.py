@@ -6,9 +6,10 @@ class Interface:
 	def __init__(self):
 		self.fachada = Fachada()
 		self.ajuda = \
-			"l listar atividades\n" \
-			"c criar atividade\n"   \
-			"a apagar atividade\n"  \
+			"l listar atividades\n"          \
+			"m marcar estado de atividade\n" \
+			"c criar atividade\n"            \
+			"a apagar atividade\n"           \
 			"x sair"
 
 	def iniciar(self):
@@ -34,6 +35,8 @@ class Interface:
 			self.criar_atividade()
 		elif entrada == 'l':
 			self.listar_atividades()
+		elif entrada == 'm':
+			self.marcar_estado_atividade()
 
 	def apagar_atividade(self):
 		"""Permita o usuario escolher uma atividade para apagar."""
@@ -57,6 +60,18 @@ class Interface:
 		atividade = Atividade(nome, deadline, disciplina)
 
 		self.fachada.criar_atividade(atividade)
+
+	def marcar_estado_atividade(self):
+		"""Permita ao usuario marcar o estado de uma atividade."""
+
+		self.listar_atividades()
+
+		numero_atividade = int(input('marcar conclusão em atividade de número: '))
+
+		atividades = self.fachada.obter_atividades()
+		atividade_selecionada = atividades[numero_atividade - 1]
+
+		self.fachada.marcar_estado_atividade(atividade_selecionada)
 
 	def listar_atividades(self):
 		"""Mostre ao usuario uma lista numerada de atividades."""

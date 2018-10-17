@@ -1,11 +1,17 @@
 
 class Atividade:
 
-	def __init__(self, nome, deadline, disciplina):
+	def __init__(self, nome, deadline, disciplina, concluida=False):
 		self.nome = nome
 		self.deadline = deadline
 		self.disciplina = disciplina
+		self.concluida = concluida
 
 	def __str__(self):
-		return self.nome + ' | ' + self.disciplina
+		if self.concluida:
+			concluida_str = 'concluída'
+		else:
+			concluida_str = 'não concluída'
+
+		return self.nome + ' | ' + self.disciplina + ' (' + concluida_str + ')'
 
