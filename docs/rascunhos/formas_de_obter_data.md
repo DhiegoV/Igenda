@@ -12,9 +12,7 @@ um dia. Todavia, uma coisa que ele deve ter se esquecido é que estamos tratando
 de um programa de terminal, no qual não dá pra _clicar_ em alguma coisa, mas
 apenas digitar. Tudo bem, então deixemos o usuário navegar com setas pelo
 calendário. Isso parece uma boa ideia, mas adiciona muita complexidade: teremos
-que saber a posição atual do cursor, detectar as teclas pessionadas e atualizar
+que saber a posição atual do cursor, detectar as teclas pressionadas, atualizar
 isso no calendário e o pior: isso tudo só para a simples tarefa de selecionar o
 dia de entrega da atividade.
 
-só vai orientá-lo sobre em que semana ele está, o
-que pode ser muito bom, mas não soluciona o nosso problema, pois
