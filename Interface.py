@@ -7,6 +7,7 @@ class Interface:
 		self.fachada = Fachada()
 		self.ajuda = \
 			"l listar atividades\n"          \
+			"h mostrar essa ajuda\n"         \
 			"m marcar estado de atividade\n" \
 			"c criar atividade\n"            \
 			"a apagar atividade\n"           \
