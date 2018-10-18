@@ -33,8 +33,6 @@ conveniente opções semânticas, isto é, relativas ao dia corrente. Exemplos
 disso seriam "amanhã", "depois de amanhã" e até mesmo submenus como "na
 próxima...", que levariam para uma lista de dias de semana como a seguinte:
 
-[`date`]: https://docs.python.org/3/library/datetime.html#date-objects
-
 	s segunda
 	t terça
 	q quarta
@@ -42,6 +40,8 @@ próxima...", que levariam para uma lista de dias de semana como a seguinte:
 	x sexta
 	b sábado
 	d domingo
+
+[`date`]: https://docs.python.org/3/library/datetime.html#date-objects
 
 Outro submenu poderia ser "nesta..." que aí levaria para uma lista como esta
 acima, mas faria referência à semana corrente. Outro ponto positivo destes dias
