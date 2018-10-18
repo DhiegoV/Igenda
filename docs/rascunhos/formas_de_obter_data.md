@@ -28,13 +28,10 @@ usuário):
 	ano: 2018
 
 Eu gostei, simplifica o programa e a gente pode usar as facilidades do tipo
-[`date`][] de Python. No entanto, ainda assim eu acho que pode melhorar: Da mesma
-forma que eu penso (mas ainda falta escrever aqui) para a seleção de
-disciplinas e futuras tags, seria mais útil e conveniente algumas opções mais
-significativas, isto é, relativas ao dia corrente, do que apenas números
-absolutos, como por exemplo "amanhã", "depois de amanhã" ou até mesmo submenus
-como "na próxima..." que levariam para uma lista de dias de semana como a
-seguinte:
+[`date`][] de Python. No entanto, eu acho que pode melhorar, seria mais útil e
+conveniente opções semânticas, isto é, relativas ao dia corrente. Exemplos
+disso seriam "amanhã", "depois de amanhã" e até mesmo submenus como "na
+próxima...", que levariam para uma lista de dias de semana como a seguinte:
 
 [`date`]: https://docs.python.org/3/library/datetime.html#date-objects
 
