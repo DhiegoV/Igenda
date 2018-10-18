@@ -6,11 +6,11 @@ class Interface:
 	def __init__(self):
 		self.fachada = Fachada()
 		self.ajuda = \
-			"l listar atividades\n"          \
-			"h mostrar essa ajuda\n"         \
-			"m marcar estado de atividade\n" \
-			"c criar atividade\n"            \
 			"a apagar atividade\n"           \
+			"c criar atividade\n"            \
+			"h mostrar essa ajuda\n"         \
+			"l listar atividades\n"          \
+			"m marcar estado de atividade\n" \
 			"x sair"
 
 	def iniciar(self):
