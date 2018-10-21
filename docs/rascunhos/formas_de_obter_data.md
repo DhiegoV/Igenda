@@ -79,6 +79,7 @@ Outro:
 	> c
 	nome: trabalho
 	deadline,
+
 	a amanhã
 	d depois de amanhã
 	n nesta...
