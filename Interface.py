@@ -8,6 +8,7 @@ class Interface:
 		self.ajuda = \
 			"a apagar atividade\n"           \
 			"c criar atividade\n"            \
+			"e editar atividade\n"           \
 			"h mostrar essa ajuda\n"         \
 			"l listar atividades\n"          \
 			"m marcar estado de atividade\n" \
@@ -50,6 +51,27 @@ class Interface:
 		atividade_selecionada = atividades[numero_atividade-1]
 
 		self.fachada.apagar_atividade(atividade_selecionada)
+
+	def editar_atividade(self):
+		self.listar_atividades()
+
+		# TODO colocar excecao aqui, pra caso nao seja digitado numero
+		numero_atividade = int(input("número da atividade a editar: "))
+
+		lista_atividades = self.fachada.obter_atividades()
+		# TODO colocar excecao aqui, pra caso numero informado nao corresponda a alguma coisa
+		atividade = lista_atividades[numero_atividade-1]
+
+		print(
+			"1 nome", "(" + atividade.nome + ")"
+			"2 deadline", "(" + atividade.deadline + ")"
+			"3 disciplina", "(" + atividade.disciplina + ")"
+		)
+
+		# TODO colocar excecao aqui, pra caso nao seja digitado numero
+		numero_atributo = int(input("número do atributo a editar: "))
+
+		# TODO concluir caso de uso!
 
 	def criar_atividade(self):
 		"""Crie uma atividade solicitando ao usuario os dados necessarios."""
