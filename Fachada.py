@@ -11,6 +11,10 @@ class Fachada:
 		"""
 		self.atividades.remove(atividade)
 
+	def atualizar_atividades(self, atividades):
+		"""Atualize as atividades do sistema sobrescrevendo-as com as dadas."""
+		self.atividades = atividades
+
 	def marcar_estado_atividade(self, atividade):
 		"""Dada uma atividade, marque-a como concluida.
 
