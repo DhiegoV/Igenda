@@ -35,6 +35,8 @@ class Interface:
 			self.apagar_atividade()
 		elif entrada == 'c':
 			self.criar_atividade()
+		elif entrada == 'e':
+			self.editar_atividade()
 		elif entrada == 'l':
 			self.listar_atividades()
 		elif entrada == 'm':
@@ -63,15 +65,30 @@ class Interface:
 		atividade = lista_atividades[numero_atividade-1]
 
 		print(
-			"1 nome", "(" + atividade.nome + ")"
-			"2 deadline", "(" + atividade.deadline + ")"
+			"1 nome", "(" + atividade.nome + ")\n"
+			"2 deadline", "(" + atividade.deadline + ")\n"
 			"3 disciplina", "(" + atividade.disciplina + ")"
 		)
 
 		# TODO colocar excecao aqui, pra caso nao seja digitado numero
 		numero_atributo = int(input("número do atributo a editar: "))
 
-		# TODO concluir caso de uso!
+		if numero_atributo == 1:
+			novo_nome = input("novo nome: ")
+			atividade.nome = novo_nome
+		elif numero_atributo == 2:
+			nova_deadline = input("nova deadline: ")
+			atividade.deadline = nova_deadline
+		elif numero_atributo == 3:
+			nova_disciplina = input("nova disciplina: ")
+			atividade.disciplina = nova_disciplina
+		else:
+			print("número não corresponde a nenhum atributo")
+
+		# atualizando lista de atividades com a atividade modificada
+		lista_atividades[numero_atividade-1] = atividade
+
+		self.fachada.atualizar_atividades(lista_atividades)
 
 	def criar_atividade(self):
 		"""Crie uma atividade solicitando ao usuario os dados necessarios."""
