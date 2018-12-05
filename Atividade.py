@@ -13,5 +13,8 @@ class Atividade:
 		else:
 			concluida_str = 'não concluída'
 
-		return self.nome + ' | ' + self.disciplina + ' (' + concluida_str + ')'
+		return self.nome + \
+			   ' [de ' + self.disciplina + ']' + \
+			   ' [para ' + self.deadline + ']' + \
+			   ' (' + concluida_str + ')'
 
