@@ -42,6 +42,8 @@ class Fachada:
 		return self.atividades
 
 	def salvar_atividades(self):
+		"""Salve a lista de atividades corrente em persistencia."""
 		atividade_dao = AtividadeDAO()
+		atividade_dao.apagar_atividades()
 		atividade_dao.salvar_atividades(self.atividades)
 

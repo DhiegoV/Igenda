@@ -9,6 +9,11 @@ class AtividadeDAO:
 
 	# ALTERAÇÕES
 
+	def apagar_atividades(self):
+		"""Apague todas as atividades do banco de dados."""
+
+		self.alterar_banco('delete from atividade')
+
 	def inicializar_banco(self):
 
 		self.alterar_banco(
