@@ -51,11 +51,17 @@ class AtividadeDAO:
 
 		atividades = []
 		for tupla in tuplas_atividades:
+
+			if tupla[3] == 'True':
+				concluida = True
+			else:
+				concluida = False
+
 			atividade = Atividade(
 				tupla[0], # nome
 				tupla[1], # deadline
 				tupla[2], # disciplina
-				bool(tupla[3]) # concluida
+				concluida
 			)
 
 			atividades.append(atividade)
