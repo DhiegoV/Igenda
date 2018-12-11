@@ -17,6 +17,8 @@ class Interface:
 	def iniciar(self):
 		"""Inicie o sistema."""
 
+		self.fachada.carregar_atividades()
+
 		print("Insira h para ajuda")
 
 		while True:

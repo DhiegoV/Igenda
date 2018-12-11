@@ -17,6 +17,10 @@ class Fachada:
 		"""Atualize as atividades do sistema sobrescrevendo-as com as dadas."""
 		self.atividades = atividades
 
+	def carregar_atividades(self):
+		atividade_dao = AtividadeDAO()
+		self.atividades = atividade_dao.carregar_atividades()
+
 	def marcar_estado_atividade(self, atividade):
 		"""Dada uma atividade, marque-a como concluida.
 

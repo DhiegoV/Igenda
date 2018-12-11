@@ -1,5 +1,6 @@
 
 import sqlite3
+from Atividade import Atividade
 
 class AtividadeDAO:
 
@@ -40,8 +41,20 @@ class AtividadeDAO:
 
 	# CONSULTAS
 
-	def obter_atividades(self):
-		atividades = self.consultar_banco('select * from atividade')
+	def carregar_atividades(self):
+		tuplas_atividades = self.consultar_banco('select * from atividade')
+
+		atividades = []
+		for tupla in tuplas_atividades:
+			atividade = Atividade(
+				tupla[0], # nome
+				tupla[1], # deadline
+				tupla[2], # disciplina
+				bool(tupla[3]) # concluida
+			)
+
+			atividades.append(atividade)
+
 		return atividades
 
 	# MÉTODOS DE UTILIDADE
