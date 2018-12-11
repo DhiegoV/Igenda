@@ -1,24 +1,42 @@
 
 import sqlite3
 
-class UsuarioDAO:
+class AtividadeDAO:
 
 	def __init__(self):
 		self.conexao = sqlite3.connect("atividades.sqlite")
 
 	# ALTERAÇÕES
 
-	def salvar_atividades(self, atividades):
+	def inicializar_banco(self):
+
 		self.alterar_banco(
-			'insert into atividade(nome, deadline, disciplina, concluida) VALUES ' +
-			'(\'{}\', \'{}\', \'{}\', \'{}\', \'{}\')'.format(
-				usuario.get_nome(),
-				usuario.get_email(),
-				usuario.get_idade(),
-				usuario.get_senha(),
-				usuario.get_apelido()
+			'''
+			create table atividade(
+				nome varchar(50),
+				deadline varchar(50),
+				disciplina varchar(100),
+				concluida varchar(5)
 			)
+			'''
 		)
+
+	def salvar_atividades(self, atividades):
+
+		try:
+			for atividade in atividades:
+				self.alterar_banco(
+					'insert into atividade(nome, deadline, disciplina, concluida) VALUES ' +
+					'(\'{}\', \'{}\', \'{}\', \'{}\')'.format(
+						atividade.nome,
+						atividade.deadline,
+						atividade.disciplina,
+						str(atividade.concluida)
+					)
+				)
+		except sqlite3.OperationalError:
+			self.inicializar_banco()
+			self.salvar_atividades(atividades)
 
 	# CONSULTAS
 

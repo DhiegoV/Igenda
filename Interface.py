@@ -22,6 +22,12 @@ class Interface:
 		while True:
 			self.prompt()
 
+	def finalizar(self):
+		"""Finalize o sistema."""
+
+		self.fachada.salvar_atividades()
+		exit()
+
 	def prompt(self):
 		"""Solicite entrada do usuario."""
 
@@ -30,7 +36,7 @@ class Interface:
 		if entrada == 'h':
 			print(self.ajuda)
 		elif entrada == 'x':
-			exit()
+			self.finalizar()
 		elif entrada == 'a':
 			self.apagar_atividade()
 		elif entrada == 'c':

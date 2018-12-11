@@ -1,4 +1,6 @@
 
+from AtividadeDAO import AtividadeDAO
+
 class Fachada:
 
 	def __init__(self):
@@ -34,4 +36,8 @@ class Fachada:
 	def obter_atividades(self):
 		"""Retorne uma lista com as atividades do sistema."""
 		return self.atividades
+
+	def salvar_atividades(self):
+		atividade_dao = AtividadeDAO()
+		atividade_dao.salvar_atividades(self.atividades)
 
