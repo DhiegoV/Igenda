@@ -47,24 +47,29 @@ class AtividadeDAO:
 	# CONSULTAS
 
 	def carregar_atividades(self):
-		tuplas_atividades = self.consultar_banco('select * from atividade')
+		try:
+			tuplas_atividades = self.consultar_banco('select * from atividade')
 
-		atividades = []
-		for tupla in tuplas_atividades:
+			atividades = []
+			for tupla in tuplas_atividades:
 
-			if tupla[3] == 'True':
-				concluida = True
-			else:
-				concluida = False
+				if tupla[3] == 'True':
+					concluida = True
+				else:
+					concluida = False
 
-			atividade = Atividade(
-				tupla[0], # nome
-				tupla[1], # deadline
-				tupla[2], # disciplina
-				concluida
-			)
+				atividade = Atividade(
+					tupla[0], # nome
+					tupla[1], # deadline
+					tupla[2], # disciplina
+					concluida
+				)
 
-			atividades.append(atividade)
+				atividades.append(atividade)
+
+		except sqlite3.OperationalError:
+			self.inicializar_banco()
+			self.carregar_atividades()
 
 		return atividades
 
